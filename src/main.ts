@@ -14,9 +14,3 @@ const map = new Map({
   zoom: 3,
   hash: true,
 });
-
-map.on("style.load", () => {
-  map.setProjection({
-    type: "globe", // Set projection to globe
-  });
-});
