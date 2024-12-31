@@ -32,7 +32,58 @@ h1 {
 }
 
 #map {
-  height: 99%;
+  height: 100%;
+  width: 100%;
+}
+
+.map-overlay {
+  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  padding: 0;
+}
+
+.map-overlay .map-overlay-inner {
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 0;
+  width: fit-content;
+}
+
+.map-overlay-inner fieldset:last-child {
+  margin: 0;
+}
+
+.map-overlay-inner img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.map-overlay-inner button {
+  cursor: pointer;
+}
+.map-overlay-inner button .active {
+  border: 2px solid #000;
+}
+
+.map-overlay-inner button:focus {
+  outline: none;
+}
+
+.map-overlay-inner button:hover {
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.map-overlay-inner img {
+  display: block;
   width: 100%;
 }
 
