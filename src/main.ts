@@ -30,8 +30,8 @@ layerToggle.addEventListener("click", () => {
       : (styleSatellite as StyleSpecification),
   );
 
-  // Update button content
-  toggleImg.src = `src/assets/${
+  // Update button content using public folder path
+  toggleImg.src = `/images/${
     currentStyle === "basic" ? "satellite" : "basic"
   }.png`;
   toggleImg.alt = `Switch to ${
