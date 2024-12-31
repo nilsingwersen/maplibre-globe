@@ -1,7 +1,7 @@
 {
   "name": "maplibre-globe",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,6 +13,6 @@
     "vite": "^6.0.6"
   },
   "dependencies": {
-    "maplibre-gl": "5.0.0-pre.10"
+    "maplibre-gl": "5.0.0"
   }
 }
