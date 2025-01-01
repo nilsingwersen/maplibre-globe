@@ -4,13 +4,57 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maplibre Globe</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Interactive Map - MapLibre Globe</title>
+    <meta name="title" content="Interactive Map - MapLibre Globe" />
+    <meta
+      name="description"
+      content="Explore the world with MapLibre. An interactive map providing satellite and vector layers."
+    />
+    <meta name="author" content="Nils" />
+    <meta
+      name="keywords"
+      content="map, MapLibre, interactive map, web mapping, globe visualization"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://globe.ingwersen.dev" />
+    <meta property="og:title" content="Interactive Map - MapLibre Globe" />
+    <meta
+      property="og:description"
+      content="Explore the world with MapLibre. Switch between vector and satellite views seamlessly."
+    />
+    <meta
+      property="og:image"
+      content="https://globe.ingwersen.dev/thumbnail.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://globe.ingwersen.dev" />
+    <meta property="twitter:title" content="Interactive Map - MapLibre Globe" />
+    <meta
+      property="twitter:description"
+      content="Explore the world with MapLibre. Switch between layers with a click."
+    />
+    <meta
+      property="twitter:image"
+      content="https://globe.ingwersen.dev/thumbnail.png"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://globe.ingwersen.dev" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
   </head>
   <body>
-    <div id="map"></div>
+    <main id="map" aria-label="Interactive Map powered by MapLibre"></main>
     <div class="map-overlay">
       <div class="map-overlay-inner">
-        <button id="layer-toggle">
+        <button id="layer-toggle" aria-label="Switch to satellite view">
           <img src="/satellite.png" alt="Switch to satellite" />
         </button>
       </div>
